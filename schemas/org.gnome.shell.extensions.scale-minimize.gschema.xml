@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schemalist>
+  <schema id="org.gnome.shell.extensions.scale-minimize" path="/org/gnome/shell/extensions/scale-minimize/">
+    
+    <key name="duration" type="i">
+      <default>300</default>
+      <summary>Animation Duration</summary>
+      <description>Duration of the minimize/unminimize animation in milliseconds.</description>
+    </key>
+
+    <key name="final-opacity" type="i">
+      <default>0</default>
+      <summary>Final Opacity</summary>
+      <description>Opacity of the window at the end of minimize (0-255).</description>
+    </key>
+
+    <key name="bounce-scale" type="d">
+      <default>1.1</default>
+      <summary>Bounce Scale</summary>
+      <description>How much the window grows before shrinking (e.g. 1.1 = 10% growth). Set to 1.0 to disable bounce.</description>
+    </key>
+
+    <key name="bounce-ratio" type="d">
+      <default>0.6</default>
+      <summary>Bounce Ratio</summary>
+      <description>Percentage of time spent on the bounce phase (0.0 - 1.0).</description>
+    </key>
+
+    <key name="animation-curve" type="i">
+      <default>0</default>
+      <summary>Animation Curve</summary>
+      <description>0: Ease In Expo (Suction), 1: Ease Out Expo (Glide), 2: Linear</description>
+    </key>
+
+  </schema>
+</schemalist>
+

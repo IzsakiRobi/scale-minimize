@@ -1,0 +1,16 @@
+{
+  "name": "Simple Scale Minimize",
+  "description": "Lightweight scale down animation to Dash.",
+  "uuid": "scale-minimize@ostricks.com",
+  "shell-version": [
+    "45",
+    "46",
+    "47",
+    "48",
+    "49",
+    "50"
+  ],
+  "url": "https://github.com/IzsakiRobi/scale-minimize",
+  "settings-schema": "org.gnome.shell.extensions.scale-minimize"
+}
+
