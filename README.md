@@ -1,8 +1,8 @@
-<p align="center">
-  <img src="Screenshots/scale-minimize-icon.svg" alt="DashCraft" width="256" height="256">
-</p>
+<h1 align="center">Simple Scale Minimize</h1>
 
-# Simple Scale Minimize
+<p align="center">
+  <img src="Screenshots/scale-minimize-icon.svg" alt="Simple Scale Minimize" width="256" height="256">
+</p>
 
 A lightweight minimize and restore animation toward the bottom of the screen, with configurable timing, movement curve, bounce, and opacity.
 
