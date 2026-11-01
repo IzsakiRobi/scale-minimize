@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <title>Scale Minimize</title>
+  <desc>Three increasingly small and opaque Adwaita windows descend toward the white app icon of a four-colour dock, illustrating a zoom minimize animation.</desc>
+  <defs>
+
+    <linearGradient id="dock" x1="0" y1="0" x2="0" y2="1">
+      <stop stop-color="#606662"/>
+      <stop offset="1" stop-color="#454b47"/>
+    </linearGradient>
+    <linearGradient id="blue" x2="0" y2="1"><stop stop-color="#62a0ea"/><stop offset="1" stop-color="#3584e4"/></linearGradient>
+    <linearGradient id="green" x2="0" y2="1"><stop stop-color="#8ff0a4"/><stop offset="1" stop-color="#33d17a"/></linearGradient>
+    <linearGradient id="black" x2="0" y2="1"><stop stop-color="#45434b"/><stop offset="1" stop-color="#241f31"/></linearGradient>
+    <linearGradient id="white" x2="0" y2="1"><stop stop-color="#ffffff"/><stop offset="1" stop-color="#deddda"/></linearGradient>
+    <linearGradient id="badge" x2="0" y2="1"><stop stop-color="#f66171"/><stop offset="1" stop-color="#e01b24"/></linearGradient>
+    <filter id="ground-shadow" x="-15%" y="-150%" width="130%" height="400%" color-interpolation-filters="sRGB">
+      <feGaussianBlur stdDeviation="5"/>
+    </filter>
+
+    <linearGradient id="header" x2="0" y2="1"><stop stop-color="#f6f5f4"/><stop offset="1" stop-color="#deddda"/></linearGradient>
+
+    <g id="window">
+      <rect x="0" y="5" width="380" height="220" rx="22" fill="#77767b"/>
+      <rect width="380" height="220" rx="22" fill="#fafafa"/>
+      <path d="M22 0h336a22 22 0 0 1 22 22v38H0V22A22 22 0 0 1 22 0Z" fill="url(#header)"/>
+      <path d="M1 60h378" stroke="#c0bfbc" stroke-width="2"/>
+      <!-- Navigation and address field; no tiny text. -->
+      <path d="m28 24-7 7 7 7m-6-7h17" fill="none" stroke="#77767b" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+      <rect x="57" y="16" width="191" height="30" rx="10" fill="#ffffff" stroke="#c0bfbc" stroke-width="1.5"/>
+      <rect x="75" y="27" width="88" height="7" rx="3.5" fill="#c0bfbc"/>
+      <!-- GNOME-style minimize, maximize and close controls. -->
+      <path d="M266 33h10m17-7h10v10h-10z" fill="none" stroke="#5e5c64" stroke-width="2.5" stroke-linecap="round"/>
+      <circle cx="346" cy="31" r="14" fill="#d5d3d0"/>
+      <path d="m341 26 10 10m0-10-10 10" fill="none" stroke="#5e5c64" stroke-width="2.5" stroke-linecap="round"/>
+      <!-- Simple blue content keeps all three stages recognizable at small sizes. -->
+      <rect x="22" y="80" width="104" height="116" rx="10" fill="#c4def8"/>
+      <rect x="146" y="80" width="212" height="58" rx="10" fill="url(#blue)"/>
+      <rect x="146" y="154" width="148" height="10" rx="5" fill="#c0bfbc"/>
+      <rect x="146" y="177" width="185" height="10" rx="5" fill="#deddda"/>
+      <rect x="1" y="1" width="378" height="218" rx="21" fill="none" stroke="#77767b" stroke-width="2"/>
+    </g>
+  </defs>
+  <g transform="translate(30 160) scale(.88)">
+  <!-- Soft horizontal ground shadow, following the supplied elementary-style reference. -->
+  <ellipse cx="256" cy="367" rx="224" ry="9" fill="#000000" opacity=".30" filter="url(#ground-shadow)"/>
+  <rect x="24" y="202" width="464" height="160" rx="44" fill="#242b28"/>
+  <rect x="24" y="190" width="464" height="160" rx="44" fill="url(#dock)"/>
+  <rect x="25" y="191" width="462" height="158" rx="43" fill="none" stroke="#ffffff" stroke-opacity=".10" stroke-width="2"/>
+  <!-- Four identical rounded square faces with equal spacing. -->
+  <rect x="54" y="228" width="80" height="80" rx="22" fill="#1c71d8"/>
+  <rect x="54" y="222" width="80" height="80" rx="22" fill="url(#blue)"/>
+  <path d="M76 224h36a20 20 0 0 1 20 20" fill="none" stroke="#ffffff" stroke-opacity=".18" stroke-width="2" stroke-linecap="round"/>
+  <rect x="162" y="228" width="80" height="80" rx="22" fill="#17151e"/>
+  <rect x="162" y="222" width="80" height="80" rx="22" fill="url(#black)"/>
+  <path d="M184 224h36a20 20 0 0 1 20 20" fill="none" stroke="#ffffff" stroke-opacity=".18" stroke-width="2" stroke-linecap="round"/>
+  <rect x="270" y="228" width="80" height="80" rx="22" fill="#9a9996"/>
+  <rect x="270" y="222" width="80" height="80" rx="22" fill="url(#white)"/>
+  <path d="M292 224h36a20 20 0 0 1 20 20" fill="none" stroke="#ffffff" stroke-opacity=".18" stroke-width="2" stroke-linecap="round"/>
+  <rect x="378" y="228" width="80" height="80" rx="22" fill="#26a269"/>
+  <rect x="378" y="222" width="80" height="80" rx="22" fill="url(#green)"/>
+  <path d="M400 224h36a20 20 0 0 1 20 20" fill="none" stroke="#ffffff" stroke-opacity=".18" stroke-width="2" stroke-linecap="round"/>
+  <circle cx="94" cy="329" r="4" fill="#99c1f1"/>
+  <circle cx="202" cy="329" r="4" fill="#c0bfbc"/>
+  </g>
+  <!-- Three static animation stages, ordered from large/faint to small/solid. -->
+  <use xlink:href="#window" transform="translate(40 34)" opacity=".24"/>
+  <use xlink:href="#window" transform="translate(134 159) scale(.72)" opacity=".55"/>
+  <use xlink:href="#window" transform="translate(227 278) scale(.40)"/>
+</svg>
