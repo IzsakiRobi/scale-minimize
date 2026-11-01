@@ -1,11 +1,19 @@
-Hi everyone!
+# Simple Scale Minimize
 
-I’ve created a simple Scale Minimize extension for GNOME Shell.
+A lightweight minimize and restore animation toward the bottom of the screen, with configurable timing, movement curve, bounce, and opacity.
 
-I made it because I missed having the minimize animation go toward the hidden Dash.
+Version **1.1** · GNOME Shell **45–51** · UUID: `scale-minimize@ostricks.com`
 
-I recommend it for those who do not use Dash To Dock or similar extensions that make the Dash always visible as a dock, 
+Download the extension ZIP from [Releases](https://github.com/IzsakiRobi/scale-minimize/releases/latest) and install it with:
 
-who like the default GNOME look and simplicity, but don’t like that windows minimize toward the top-left corner.
+```sh
+gnome-extensions install --force scale-minimize@ostricks.com.shell-extension.zip
+```
 
-<img width="3840" height="2160" alt="Screenshot From 2026-02-10 21-55-06" src="https://github.com/user-attachments/assets/2f6a8b84-f068-4b70-b80f-f03458405a2b" />
+For a source checkout, compile settings with `glib-compile-schemas schemas` after copying the runtime files into the extension directory. Restart your session if GNOME Shell has not discovered the extension yet.
+
+## GNOME review note
+
+GNOME 51 is a stable release according to the [official release calendar](https://release.gnome.org/calendar/). Shexli 0.2.1 still hard-codes versions greater than 50 as future releases, so its `EGO-M-004` finding for `51` is a false positive. The metadata retains GNOME 51 support rather than hiding it from users.
+
+Licensed under GPL-2.0-or-later; see [LICENSE](LICENSE).

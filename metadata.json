@@ -12,6 +12,6 @@
     "51"
   ],
   "url": "https://github.com/IzsakiRobi/scale-minimize",
-  "settings-schema": "org.gnome.shell.extensions.scale-minimize"
+  "settings-schema": "org.gnome.shell.extensions.scale-minimize",
+  "version-name": "1.1"
 }
-
